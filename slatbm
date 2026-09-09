@@ -1,0 +1,13 @@
+let alunos = Number(prompt("Digite a quantidade de alunos:"));
+let monitores = Number(prompt("Digite a quantidade de monitores:"));
+let convidados = Number(prompt("Digite a quantidade de convidados:"));
+
+let total = alunos + monitores + convidados;
+
+if (total <= 100 && convidados <= 20) {
+    console.log("Evento aprovado! Todos podem entrar.");
+} else if (total > 100) {
+    console.log("Evento não aprovado: o número de pessoas ultrapassa os 100 ingressos.");
+} else {
+    console.log("Evento não aprovado: o número de convidados ultrapassa o limite de 20.");
+}
